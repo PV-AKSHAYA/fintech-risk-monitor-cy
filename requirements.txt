@@ -3,3 +3,21 @@ pandas==3.0.1
 python-dateutil==2.9.0.post0
 six==1.17.0
 tzdata==2025.3
+
+# Machine Learning & Imbalance Handling
+scikit-learn
+xgboost
+imbalanced-learn
+
+# Explainable AI (XAI)
+shap
+
+# Visualization (for your Notebook)
+matplotlib
+seaborn
+
+# API & Deployment
+fastapi
+uvicorn
+pydantic
+joblib
