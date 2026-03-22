@@ -3,8 +3,12 @@ import pandas as pd
 import numpy as np
 
 # 1. Load the model and the explainer we saved earlier
-MODEL_PATH = "ml/models/fraud_model.pkl"
-EXPLAINER_PATH = "ml/models/shap_explainer.pkl"
+# MODEL_PATH = "ml/models/fraud_model.pkl"
+# EXPLAINER_PATH = "ml/models/shap_explainer.pkl"
+import os
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+MODEL_PATH = os.path.join(BASE_DIR, "ml", "models", "fraud_model.pkl")
+EXPLAINER_PATH = os.path.join(BASE_DIR, "ml", "models", "shap_explainer.pkl")
 
 model = joblib.load(MODEL_PATH)
 explainer = joblib.load(EXPLAINER_PATH)

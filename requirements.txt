@@ -1,23 +1,40 @@
-numpy==2.4.3
-pandas==3.0.1
+# ── Backend ──────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn==0.30.1
+starlette==0.37.2
+pydantic==2.7.4
+pydantic_core==2.18.4
+python-multipart==0.0.22
+
+# Database
+SQLAlchemy==2.0.48
+greenlet==3.3.2
+
+# Auth
+python-jose==3.5.0
+passlib==1.7.4
+bcrypt==4.0.1
+cryptography==46.0.5
+
+# Config
+python-dotenv==1.2.2
+
+# ── ML ───────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.0
+imbalanced-learn==0.12.3
+xgboost==2.0.3
+shap==0.44.1
+joblib==1.4.2
+matplotlib==3.9.0
+seaborn==0.13.2
+scipy==1.16.2
+
+# ── Shared utilities ─────────────────────────────────────
 python-dateutil==2.9.0.post0
 six==1.17.0
 tzdata==2025.3
-
-# Machine Learning & Imbalance Handling
-scikit-learn
-xgboost
-imbalanced-learn
-
-# Explainable AI (XAI)
-shap
-
-# Visualization (for your Notebook)
-matplotlib
-seaborn
-
-# API & Deployment
-fastapi
-uvicorn
-pydantic
-joblib
+requests==2.32.5
+httpx==0.28.1
+anyio==4.10.0
